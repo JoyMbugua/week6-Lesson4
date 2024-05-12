@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siberian Husky</title>
+    <style>
+      .bow {
+        text-align: center;
+        font-size: 40px;
+      }
+      h1 {
+        text-align: center;
+        color: #fb6f92;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      h2 {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 0px;
+        color: #fb6f92;
+        text-decoration: underline;
+      }
+      .husky {
+        display: block;
+        margin: 0 auto;
+        max-width: 45%;
+        border: 20px solid #ffffff;
+        border-radius: 50px;
+      }
+      p {
+        line-height: 1.5;
+        text-align: center;
+      }
+      .learn {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        color: #7747ed;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: #fb6f92;
+        color: #ffffff;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms;
+      }
+      button:hover {
+        background: #ffffff;
+        color: #fb6f92;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      body {
+        background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+      }
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="bow">🎀</h1>
+      <h1><em> THE SIBERIAN HUSKY</em></h1>
+      <h2>The Most Energetic Dog Breed</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/183/original/hu.jpeg?1711813118"
+        class="husky"
+      />
+      <p>
+        The Siberian Husky is a medium-sized working sled dog breed.<br />
+        The breed belongs to the Spitz genetic family.<br />
+        It is recognizable by its thickly furred double coat, erect triangular
+        ears, and distinctive markings, and is smaller than the similar-looking
+        Alaskan Malamute.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Siberian_Husky"
+        target="_blank"
+        class="learn"
+      >
+        Learn more about huskies
+      </a>
+      <button>ADOPT A SIBERIAN HUSKY</button> <br />
+      <p class="footer"><em>This page was built by </em>Joy Mbugua.</p>
+    </div>
+    <script>
+      function adopt() {
+        let name = prompt(" What is your name?");
+        let email = prompt("What is your email address?");
+        let breed = prompt("What is your favorite dog breed?");
+        if (
+          breed.toLowerCase() === "husky" ||
+          breed.toLowerCase() === "siberian husky"
+        ) {
+          alert(
+            "😊 Great " +
+              name +
+              " ! We'll be in touch with you via email concerning the adoption process 🐶 "
+          );
+        } else {
+          alert(
+            "That's Great ! " +
+              name +
+              " You can only adopt a husky If It Is your Favorite Dog Breed Meanwhile Explore And Love Huskies 🙂"
+          );
+        }
+      }
+      let adoptButton = document.querySelector("button");
+      adoptButton.addEventListener("click", adopt);
+    </script>
+  </body>
+</html>
